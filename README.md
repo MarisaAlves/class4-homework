@@ -3,8 +3,9 @@
 Instructions for building and running the Dockerfile:
 A. Building the Dockerfile into an image:
 - In the terminal, make sure to change your directory to the one containing the Dockerfile, as well as the other required files.
-- In the command line type: docker build --tag="your_image_name"
-- The "your_image_name" can be anything, but should ideally be named according to what the image does.
+- In the command line type: docker build -t your_image_name .
+- The your_image_name can be anything, but must be all lowercase and should ideally be named according to what the image does.
+- Important to include the . as it instructs to search for the Dockerfile in the current directory
 
 B. Running the image you built
 - In the command line type: docker run your_image_name
